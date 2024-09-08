@@ -37,63 +37,65 @@ namespace Login
             this.label3 = new System.Windows.Forms.Label();
             this.btn_Cancelar = new System.Windows.Forms.Button();
             this.lbl_mensaje = new System.Windows.Forms.Label();
+            this.btn_CambiarContrasenia = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(44, 73);
+            this.label1.Location = new System.Drawing.Point(63, 77);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(79, 25);
+            this.label1.Size = new System.Drawing.Size(68, 20);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Usuario";
+            this.label1.Text = "Usuario:";
             // 
             // btn_Guardar
             // 
-            this.btn_Guardar.Location = new System.Drawing.Point(49, 241);
+            this.btn_Guardar.Location = new System.Drawing.Point(67, 241);
             this.btn_Guardar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Guardar.Name = "btn_Guardar";
             this.btn_Guardar.Size = new System.Drawing.Size(112, 36);
             this.btn_Guardar.TabIndex = 1;
-            this.btn_Guardar.Text = "Guardar";
+            this.btn_Guardar.Text = "Ingresar";
             this.btn_Guardar.UseVisualStyleBackColor = true;
             this.btn_Guardar.Click += new System.EventHandler(this.btn_Guardar_Click);
             // 
             // txt_usuario
             // 
-            this.txt_usuario.Location = new System.Drawing.Point(48, 103);
+            this.txt_usuario.Location = new System.Drawing.Point(66, 102);
             this.txt_usuario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txt_usuario.Name = "txt_usuario";
-            this.txt_usuario.Size = new System.Drawing.Size(290, 30);
+            this.txt_usuario.Size = new System.Drawing.Size(235, 26);
             this.txt_usuario.TabIndex = 2;
             // 
             // txt_contrasenia
             // 
-            this.txt_contrasenia.Location = new System.Drawing.Point(48, 182);
+            this.txt_contrasenia.Location = new System.Drawing.Point(66, 181);
             this.txt_contrasenia.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txt_contrasenia.Name = "txt_contrasenia";
             this.txt_contrasenia.PasswordChar = '*';
-            this.txt_contrasenia.Size = new System.Drawing.Size(290, 30);
+            this.txt_contrasenia.Size = new System.Drawing.Size(235, 26);
             this.txt_contrasenia.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(43, 152);
+            this.label2.Location = new System.Drawing.Point(61, 151);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(114, 25);
+            this.label2.Size = new System.Drawing.Size(96, 20);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Contraseña";
+            this.label2.Text = "Contraseña:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(43, 26);
+            this.label3.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(48, 27);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(268, 25);
+            this.label3.Size = new System.Drawing.Size(290, 27);
             this.label3.TabIndex = 5;
             this.label3.Text = "Sistema de Acceso Vehicular";
             // 
@@ -112,17 +114,29 @@ namespace Login
             // 
             this.lbl_mensaje.AutoSize = true;
             this.lbl_mensaje.ForeColor = System.Drawing.Color.Red;
-            this.lbl_mensaje.Location = new System.Drawing.Point(22, 291);
+            this.lbl_mensaje.Location = new System.Drawing.Point(75, 339);
             this.lbl_mensaje.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_mensaje.Name = "lbl_mensaje";
-            this.lbl_mensaje.Size = new System.Drawing.Size(0, 25);
+            this.lbl_mensaje.Size = new System.Drawing.Size(0, 20);
             this.lbl_mensaje.TabIndex = 7;
+            // 
+            // btn_CambiarContrasenia
+            // 
+            this.btn_CambiarContrasenia.Location = new System.Drawing.Point(96, 287);
+            this.btn_CambiarContrasenia.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btn_CambiarContrasenia.Name = "btn_CambiarContrasenia";
+            this.btn_CambiarContrasenia.Size = new System.Drawing.Size(169, 38);
+            this.btn_CambiarContrasenia.TabIndex = 8;
+            this.btn_CambiarContrasenia.Text = "Cambiar Contraseña";
+            this.btn_CambiarContrasenia.UseVisualStyleBackColor = true;
+            this.btn_CambiarContrasenia.Click += new System.EventHandler(this.btn_CambiarContrasenia_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(388, 394);
+            this.ClientSize = new System.Drawing.Size(374, 384);
+            this.Controls.Add(this.btn_CambiarContrasenia);
             this.Controls.Add(this.lbl_mensaje);
             this.Controls.Add(this.btn_Cancelar);
             this.Controls.Add(this.label3);
@@ -137,6 +151,7 @@ namespace Login
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Control de Acceso";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
@@ -154,6 +169,7 @@ namespace Login
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btn_Cancelar;
         private System.Windows.Forms.Label lbl_mensaje;
+        private System.Windows.Forms.Button btn_CambiarContrasenia;
     }
 }
 

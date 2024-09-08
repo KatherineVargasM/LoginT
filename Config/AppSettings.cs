@@ -13,7 +13,10 @@ namespace Login.Config
         public string Rol { get; set; }
         public int idusuario { get; set; }
         public string AppName { get; set; }
-        private AppSettings() {
+
+
+        private AppSettings() 
+        {
             AppName = "Accesos Casari";
         }
 
